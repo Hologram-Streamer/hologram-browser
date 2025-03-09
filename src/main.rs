@@ -1,13 +1,6 @@
-use yew::prelude::*;
+mod components;
+mod views;
 
-#[function_component]
-fn App() -> Html{
-    html! {
-        <div>
-            <h1>{"Welcome to Hologram!"}</h1>
-        </div>
-    }
-}
 fn main() {
-    yew::Renderer::<App>::new().render();
+    yew::Renderer::<views::frontpage::FrontPage>::new().render();
 }
